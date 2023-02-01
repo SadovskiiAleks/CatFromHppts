@@ -40,5 +40,7 @@ public class Main {
         stream.filter(value -> value.getUpvotes() > 0)
                 .forEach(System.out::println);
 
+        response.close();
+        httpClient.close();
     }
 }
